@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>Rising Sun | Interactive Java Program</title>
+	<meta charset="utf-8">
+	
+	<style>
+	body {
+	background-color:  #484848;
+	}
+	.centerImage {
+		text-align:	   center;
+	}
+	.caption {
+		color:         white;
+		text-align:    center;
+		font-family:   verdana;
+		font-size:     300%
+	}
+	.content {
+		padding: 50px 50px;
+		color:         white;
+		font-family:   courier;
+		font-size:     150%
+	}
+	li {
+		margin:        35px 0;
+	}
+	</style>
+	
+</head>
+<body>
+	
+	<div class="centerImage">
+	<img src="rising-sun-example.gif" alt="Program example gif">
+	</div>
+	
+	<div class="caption">
+	<p>Rising Sun: an Interactive Java Program</p>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div class="content">
+	<p>A simple program that prompts the user to click repeatedly making the sun rise higher, and higher after each click. If the user has not started clicking the text instructions will be shown....</p>
+	</div>
+	
+	<div class="centerImage">
+	<img src="text-instructions.png" alt="Program example text instructions">
+	</div>
+	
+	<div class="content">
+	<p>After the user begins clicking the instructions will be hidden, If the user's mouse pointer leaves the program window both the sun and text instructions will be reset.</p>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div class="content">
+	<p>Rising Sun uses some key Java features to achieve this behavior.</p>
+	
+	<br>
+	
+	<h3>Mouse Events:</h3>
+		<ul> 
+			<li>onMouseClick(Location point)</li>
+		</ul>
+			<p><sub>Once the mouse is clicked, the sun moves, and instructions are hidden.</sub></p>
+		
+		<ul>
+			<li>onMouseExit(Location point)</li>
+		</ul>
+			<p><sub>Once the mouse exits the program window, return sun to initial location, and show instructions.</sub></p>
+	</div>
+	
+	
+	<hr>
+	
+</body>
+</html>
